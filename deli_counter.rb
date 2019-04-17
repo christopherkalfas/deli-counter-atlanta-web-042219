@@ -18,8 +18,15 @@ def take_a_number(katz_deli, new_customer)
     puts "The line is currently empty."
   else 
     constant_welcome= "Welcome, "
-    constant_position = ". You are "
+    constant_position = ". You are number "
+    constant_line = " in line."
     katz_deli << new_customer
     katz_deli.each_with_index do |name, position|
+      constant_welcome += "#{name}" += constant_position += "#{position.to_i+1}" += constant_line
+    end 
+    puts "#{constant_welcome}"
+  end
+end 
       
 
+#"Welcome, Ada. You are number 1 in line."
