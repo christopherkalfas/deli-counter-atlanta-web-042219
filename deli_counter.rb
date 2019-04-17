@@ -13,4 +13,6 @@ def line(katz_deli)
   end 
 end
 
-line(katz_deli)
+def take_a_number(katz_deli, new_customer)
+  
+
