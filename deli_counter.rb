@@ -22,3 +22,13 @@ end
       
 
 #"Welcome, Ada. You are number 1 in line."
+
+def now_serving(katz_deli)
+  if katz_deli.length == 0 
+    puts "The line is currently empty."
+  else 
+    katz_deli.each_with_index do |name, position|
+      if position == katz_deli[0]
+        served_name = name
+        puts "Currently serving #{served_name}"
+        
