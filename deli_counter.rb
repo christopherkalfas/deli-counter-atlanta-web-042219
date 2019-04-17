@@ -24,6 +24,7 @@ end
 #"Welcome, Ada. You are number 1 in line."
 
 def now_serving(katz_deli)
+  new_line = katz_deli.shift
   if katz_deli.length == 0 
     puts "There is nobody waiting to be served!"
   else 
@@ -31,7 +32,7 @@ def now_serving(katz_deli)
       if position == katz_deli[0]
         served_name = name
         puts "Currently serving #{served_name}"
-        new_line = katz_deli.shift
+        
       end 
     end 
   end 
