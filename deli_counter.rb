@@ -37,6 +37,6 @@ def now_serving(katz_deli)
       end 
     end 
   end 
-  return new_line
+  
 end 
         
