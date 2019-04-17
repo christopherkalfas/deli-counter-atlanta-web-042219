@@ -15,6 +15,9 @@ end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli.push(new_customer)
+  place_in_line = katz_deli.index(name)
+  puts "Welcome, #{name}. You are number #{place_in_line+1} in line."
+  return place_in_line
 end 
       
 
