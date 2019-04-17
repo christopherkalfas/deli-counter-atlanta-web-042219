@@ -14,16 +14,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, new_customer)
-  if katz_deli.length == 0 
-    puts "The line is currently empty."
-  else 
-    constant_welcome= "Welcome, "
-    katz_deli << new_customer
-    katz_deli.each_with_index do |name, position|
-      constant_welcome += "#{name}. You are number #{position.to_i+1} in line."
-    end 
-    puts "#{constant_welcome}"
-  end
+  katz_deli.push(new_customer)
 end 
       
 
