@@ -33,7 +33,7 @@ def now_serving(katz_deli)
       if position == katz_deli[0]
         served_name = name
         puts "Currently serving #{served_name}"
-        new_line
+        return new_line
       end 
     end 
   end 
