@@ -31,10 +31,10 @@ def now_serving(katz_deli)
       if position == katz_deli[0]
         served_name = name
         puts "Currently serving #{served_name}"
-        katz_deli.shift
+        
       end 
     end 
   end 
-  return katz_deli
+  return katz_deli.shift 
 end 
         
