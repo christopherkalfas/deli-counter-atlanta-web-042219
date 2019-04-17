@@ -24,11 +24,11 @@ end
 #"Welcome, Ada. You are number 1 in line."
 
 def now_serving(katz_deli)
-  
+   new_line = []
   if katz_deli.length == 0 
     puts "There is nobody waiting to be served!"
   else 
-    new_line = katz_deli.shift
+   new_line << katz_deli.shift
     katz_deli.each_with_index do |name, position|
       if position == katz_deli[0]
         served_name = name
